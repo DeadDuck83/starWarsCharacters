@@ -73,7 +73,7 @@
         forcePoints: $("#force-points").val().trim()
       };
 
-      // Question: What does this code do??
+      // Connects server side to client side
       $.post("/api/characters", newCharacter)
         .then(function(data) {
           console.log("add.html", data);
